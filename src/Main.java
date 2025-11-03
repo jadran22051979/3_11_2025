@@ -18,9 +18,12 @@ public class Main {
                 ostali++;
 
         }
-        System.out.println("Broj slova u riječi je : \t" + slova);
-        System.out.println("Broj brojeva u riječi je : \t" + brojevi);
-        System.out.println("Broj ostalih znakova u riječi je : \t" + ostali);
+        //Printanje s Println
+//        System.out.println("Broj slova u riječi je : \t" + slova);
+//        System.out.println("Broj brojeva u riječi je : \t" + brojevi);
+//        System.out.println("Broj ostalih znakova u riječi je : \t" + ostali);
+        //Printanje s printf
+        System.out.printf("Slova su: %s,Brojevi su: %d ,Ostali znakovi su: %s%n ", slova, brojevi, ostali);
 
     }
 
