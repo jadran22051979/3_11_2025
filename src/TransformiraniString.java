@@ -1,14 +1,27 @@
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class TransformiraniString {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Molimo unesite riječ za obrnuti redoslijed");
+        System.out.println("Molimo unesite riječ za obrnuti redoslijed riječi :");
         String unesenString = sc.nextLine();
-        for (int i = unesenString.length() - 1; i >= 0; i--) {
-            System.out.print(unesenString.charAt(i));
 
+        //Bjeline razdvajaju
+        Pattern pattern = Pattern.compile("\\s");
+
+        String[] temp = pattern.split(unesenString);
+        String rezultat = "";
+
+        //Iteriranje u obrnutom redosliedu
+        for (int i = 0; i < temp.length; i++) {
+            if (i == temp.length - 1)
+                rezultat = temp[i] + rezultat;
+            else
+                rezultat = " " + temp[i] + rezultat;
         }
+        System.out.println("Unešeni string je:\t " + unesenString);
+        System.out.println("Result is :\t" + rezultat);
 
 
     }
