@@ -13,7 +13,7 @@ public class TransformiraniString {
         String[] temp = pattern.split(unesenString);
         String rezultat = "";
 
-        //Iteriranje u obrnutom redosliedu
+        //Iteriranje 
         for (int i = 0; i < temp.length; i++) {
             if (i == temp.length - 1)
                 rezultat = temp[i] + rezultat;
@@ -21,7 +21,7 @@ public class TransformiraniString {
                 rezultat = " " + temp[i] + rezultat;
         }
         System.out.println("Unešeni string je:\t " + unesenString);
-        System.out.println("Result is :\t" + rezultat);
+        System.out.println("Rezultat je :\t" + rezultat);
 
 
     }
