@@ -15,9 +15,12 @@ public class TransformiraniString {
 
         //Iteriranje 
         for (int i = 0; i < temp.length; i++) {
+            // Provjeri da li je zadnji element
             if (i == temp.length - 1)
+                // Ako je zadnji element, spoji bez razmaka
                 rezultat = temp[i] + rezultat;
             else
+                 //Za sve druge elemente ,spoji bez razmaka
                 rezultat = " " + temp[i] + rezultat;
         }
         System.out.println("Unešeni string je:\t " + unesenString);
